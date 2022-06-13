@@ -2,8 +2,11 @@ import React from 'react'
 import { ReactComponent as DeleteIcon } from 'assets/icons/delete-icon.svg'
 import { StyledButoon } from './Button.styles'
 
-const Button = () => (
-	<StyledButoon>
+// 'click' - onClick
+// 'mouseenter' - onMouseEnter
+
+const Button = (props) => (
+	<StyledButoon {...props}>
 		<DeleteIcon />
 	</StyledButoon>
 )
